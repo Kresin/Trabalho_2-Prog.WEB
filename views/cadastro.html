@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<head>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script type="text/javascript" src="../scripts/cadastro.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <p><strong>Cadastro</strong></p>
+    </div>
+    <form>
+        <div>
+            <input type="text" id="email" placeholder="Endereço de E-mail">
+        </div>
+        <div>
+            <input type="text" id="username" placeholder="Nome de Usuário">
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="Senha">
+        </div>
+        <div>
+            <input class="name" type="text" id="firstName" placeholder="Nome">
+            <input class="name" type="text" id="lastName" placeholder="Sobrenome">
+        </div>
+        <div>
+            <input type="date" id="birthDate" placeholder="Data de Nascimento">
+        </div>
+        <div>
+            <label class="container">F
+                <input type="checkbox" id="checkboxF">
+                <span class="checkbox"></span>
+            </label>
+            <label class="container">M
+                <input type="checkbox" id="checkboxM">
+                <span class="checkbox"></span>
+            </label>
+        </div>
+        <div>
+            <button class="clean" type="button" onclick="clean()">LIMPAR</button>
+            <button type="button" onclick="send()">CONFIRMAR</button>
+        </div>
+    </form>
+</body>
+
+</html>
