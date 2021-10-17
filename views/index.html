@@ -29,82 +29,164 @@
     </nav>
 
     <div id="main">
-        <p>teste de paragrafo</p>
+        <!-- Formulário de cadastro de produto -->
 
-        <!-- Cards com os produtos -->
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/televisao.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Televisão 4K</b></h4>
-                        <p>Inserir aqui os botões</p>
-                    </div>
-                </div>
+        <form class="element_container">
+            <p id="title_text"><strong>Anunciar produto</strong></p>
+            <div>
+                <input type="text" placeholder="Nome do produto">
+                <input type="text" placeholder="Descrição do produto">
             </div>
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/ps5.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>PS5</b></h4>
-                        <p>Inserir aqui os botões</p>
-                    </div>
-                </div>
+            <div>
+                <input type="text" placeholder="Categoria do produto">
+                <input type="number" placeholder="Preço do produto">
             </div>
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/hometheater.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Home Theater</b></h4>
-                        <p>Inserir aqui os botões</p>
-                    </div>
-                </div>
+            <div>
+                <text>Estado do produto: </text>
+                <label class="container">Usado
+                    <input type="radio" name="estado_produto" id="radioU">
+                    <span class="radio"></span>
+                </label>
+                <label class="container">Seminovo
+                    <input type="radio" name="estado_produto" id="radioS">
+                    <span class="radio"></span>
+                </label>
+                <label class="container">Novo
+                    <input type="radio" name="estado_produto" id="radioN">
+                    <span class="radio"></span>
+                </label>
             </div>
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/iphone.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Iphone X</b></h4>
-                        <p>Inserir aqui os botões</p>
-                    </div>
-                </div>
-            </div>
+        </form>
+        <br>
+        <!-- Tabela com os produtos anunciados -->
+
+        <div>
+            <table>
+                <tr>
+                    <!-- Inserir o chip e ícone de filtro aqui -->
+                </tr>
+                <tr id="title_row">
+                    <th>Nome do produto</th>
+                    <th>Descrição</th>
+                    <th>Categoria</th>
+                    <th>Estado</th>
+                    <th>Preço</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Fogão à gás</td>
+                    <td>Fogão à gás Brastemp</td>
+                    <td>Cozinha</td>
+                    <td>Usado</td>
+                    <td>R$ 290,00</td>
+                    <td>Em pausa</td>
+                </tr>
+                <tr>
+                    <td>Fone de ouvido</td>
+                    <td>Fones de ouvido Edifier</td>
+                    <td>Eletrônicos</td>
+                    <td>Novo</td>
+                    <td>R$ 150,00</td>
+                    <td>Anunciado</td>
+                </tr>
+                <tr>
+                    <td>TV LED</td>
+                    <td>TV LED 32' LG</td>
+                    <td>Eletrônicos</td>
+                    <td>Usado</td>
+                    <td>R$ 899,99</td>
+                    <td>Anunciado</td>
+                </tr>
+                <tr>
+                    <td>CG 150</td>
+                    <td>Moto CG 150 Cilindradas</td>
+                    <td>Veículos</td>
+                    <td>Seminovo</td>
+                    <td>R$ 1000,00</td>
+                    <td>Vendido</td>
+                </tr>
+            </table>
         </div>
+        <br>
+        <!-- Cards com os produtos -->
+        <div class="element_container">
+            <text id="title_text">Os mais populares da semana </text>
+            <a href=""><small class="link">Veja mais</small></a>
 
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/geladeira.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Geladeira Samsung</b></h4>
-                        <p>Inserir aqui os botões</p>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/televisao.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>Televisão 4K</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/ps5.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>PS5</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/hometheater.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>Home Theater</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/iphone.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>Iphone X</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/chromecast.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Chromecast</b></h4>
-                        <p>Inserir aqui os botões</p>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/geladeira.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>Geladeira Samsung</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/notebook.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Notebook Dell</b></h4>
-                        <p>Inserir aqui os botões</p>
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/chromecast.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>Chromecast</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <img src="../assets/livro.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>O Senhor dos Anéis - Livro</b></h4>
-                        <p>Inserir aqui os botões</p>
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/notebook.png" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>Notebook Dell</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <img src="../assets/livro.jpg" alt="Avatar" style="width:100%">
+                        <div class="card_container">
+                            <h4><b>O Senhor dos Anéis - Livro</b></h4>
+                            <p>Inserir aqui os botões</p>
+                        </div>
                     </div>
                 </div>
             </div>
