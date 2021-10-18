@@ -6,7 +6,7 @@
     <script src="../scripts/index.js"></script>
     <title>Teste de título</title>
     <header>
-        <!-- <div id="logo"><img src="../assets/icone-menu.png"/></div> -->
+        <div><img id="logo" src="../assets/icone-menu.png"/></div>
     </header>
 </head>
 
@@ -30,9 +30,8 @@
 
     <div id="main">
         <!-- Formulário de cadastro de produto -->
-
         <form class="element_container">
-            <p id="title_text"><strong>Anunciar produto</strong></p>
+            <p class="title_text"><strong>Anunciar produto</strong></p>
             <div>
                 <input type="text" placeholder="Nome do produto">
                 <input type="text" placeholder="Descrição do produto">
@@ -55,6 +54,13 @@
                     <input type="radio" name="estado_produto" id="radioN">
                     <span class="radio"></span>
                 </label>
+            </div>
+            <div class="left_aligned">
+                <button type="button">Adicionar imagem</button>
+            </div>
+            <div class="right_aligned">
+                <button type="reset">Limpar</button>
+                <button type="button">Confirmar</button>
             </div>
         </form>
         <br>
@@ -110,9 +116,10 @@
         <br>
         <!-- Cards com os produtos -->
         <div class="element_container">
-            <text id="title_text">Os mais populares da semana </text>
-            <a href=""><small class="link">Veja mais</small></a>
-
+            <div class="title_text">
+                <text><strong>Os mais populares da semana </strong></text>
+                <a href=""> Ver mais</a>
+            </div>
             <div class="row">
                 <div class="column">
                     <div class="card">

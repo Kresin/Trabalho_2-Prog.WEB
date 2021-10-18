@@ -41,6 +41,11 @@ form button {
   float: none;
 }
 
+.right_aligned {
+  position: relative;
+  
+}
+
 .element_container {
   background-color: #dddddd;
   color: #808080;
@@ -48,10 +53,10 @@ form button {
   font-size: 20px;
   padding: 1% 2% 1% 2%;
   max-width: 83%;
-  align-items: center;
+  position: relative;
 }
 
-#title_text {
+.title_text {
   text-align: center;
   color: black;
 }
@@ -66,6 +71,7 @@ table {
 table tr {
   height: auto;
   border: 2px solid #eeeeee;
+  line-height: 140%;
 }
 
 table td {
@@ -75,7 +81,8 @@ table td {
 }
 
 #title_row {
-  line-height: 150%;
+  line-height: 200%;
+  color: #000;
 }
 
 .clean {
@@ -216,14 +223,11 @@ header {
 }
 
 header #logo {
-  position: absolute;
-  top: 40px;
-  left: 30px;
-  width: 100%;
+  
 }
 
-.link {
-  vertical-align: text-top;
+#logo {
+  max-width: 130px;
 }
 
 /* Código copiado de https://code.tutsplus.com/tutorials/making-a-sliding-side-navigation-menu-for-responsive-designs--cms-28400 */
