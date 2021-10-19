@@ -21,45 +21,45 @@
             <input type="text" placeholder="Busque por um produto ou categoria" name="search" class="search">
         </div>
     </header>
-        <div class="sidenav">
-            <button class="dropdown-btn">Cozinha
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Geladeira</a>
-                <a href="#">Fogão</a>
-            </div>
-            <button class="dropdown-btn">Livros
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Educacionais</a>
-                <a href="#">Infantis</a>
-            </div>
-            <button class="dropdown-btn">Eletrônicos
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Televisões</a>
-                <a href="#">Celulares</a>
-                <a href="#">Computadores</a>
-            </div>
-            <button class="dropdown-btn">Alimentos
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Cereais</a>
-                <a href="#">Bebidas</a>
-                <a href="#">Enlatados</a>
-            </div>
-            <button class="dropdown-btn">Veículos
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Carros</a>
-                <a href="#">Motos</a>
-            </div>
+    <div class="sidenav">
+        <button class="dropdown-btn">Cozinha
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Geladeira</a>
+            <a href="#">Fogão</a>
         </div>
+        <button class="dropdown-btn">Livros
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Educacionais</a>
+            <a href="#">Infantis</a>
+        </div>
+        <button class="dropdown-btn">Eletrônicos
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Televisões</a>
+            <a href="#">Celulares</a>
+            <a href="#">Computadores</a>
+        </div>
+        <button class="dropdown-btn">Alimentos
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Cereais</a>
+            <a href="#">Bebidas</a>
+            <a href="#">Enlatados</a>
+        </div>
+        <button class="dropdown-btn">Veículos
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Carros</a>
+            <a href="#">Motos</a>
+        </div>
+    </div>
 
     <script src="../scripts/index.js"></script>
     <br>
@@ -68,34 +68,34 @@
         <form class="element_container">
             <p class="element_title"><strong>Anunciar produto</strong></p>
             <div>
-                <input type="text" placeholder="Nome do produto">
-                <input type="text" placeholder="Descrição do produto">
+                <input id="product_name" type="text" placeholder="Nome do produto">
+                <input id="product_description" type="text" placeholder="Descrição do produto">
             </div>
             <div>
-                <input type="text" placeholder="Categoria do produto">
-                <input type="number" placeholder="Preço do produto">
+                <input id="product_category" type="text" placeholder="Categoria do produto">
+                <input id="product_price" type="number" placeholder="Preço do produto">
             </div>
             <div>
                 <text>Estado do produto: </text>
                 <label class="container">Usado
-                    <input type="radio" name="estado_produto" id="radioU">
+                    <input type="radio" name="estado_produto" id="product_state_used">
                     <span class="radio"></span>
                 </label>
                 <label class="container">Seminovo
-                    <input type="radio" name="estado_produto" id="radioS">
+                    <input type="radio" name="estado_produto" id="product_state_almost_new">
                     <span class="radio"></span>
                 </label>
                 <label class="container">Novo
-                    <input type="radio" name="estado_produto" id="radioN">
+                    <input type="radio" name="estado_produto" id="product_state_new">
                     <span class="radio"></span>
                 </label>
             </div>
             <div class="left_aligned">
-                <button type="button">Adicionar imagem</button>
+                <button type="button" class="button_right">Adicionar imagem</button>
             </div>
             <div class="right_aligned">
-                <button type="reset">Limpar</button>
-                <button type="button">Confirmar</button>
+                <button type="reset" class="clear_button">Limpar</button>
+                <button type="button" onclick="create()">Confirmar</button>
             </div>
         </form>
         <br>
@@ -158,37 +158,45 @@
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/televisao.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/televisao.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>Televisão 4K</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/ps5.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/ps5.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>PS5</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/hometheater.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/hometheater.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>Home Theater</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/iphone.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/iphone.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>Iphone X</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
@@ -197,37 +205,45 @@
             <div class="row">
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/geladeira.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/geladeira.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>Geladeira Samsung</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/chromecast.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/chromecast.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>Chromecast</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/notebook.png" alt="Avatar" style="width:100%">
+                        <img src="../assets/notebook.png" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>Notebook Dell</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
-                        <img src="../assets/livro.jpg" alt="Avatar" style="width:100%">
+                        <img src="../assets/livro.jpg" alt="Avatar" class="card_img">
                         <div class="card_container">
                             <h4><b>O Senhor dos Anéis - Livro</b></h4>
-                            <p>Inserir aqui os botões</p>
+                            <img src="../assets/icons/216477_shopping_cart_icon.png" class="card_icon">
+                            <img src="../assets/icons/save_icon.png" class="card_icon">
+                            <img src="../assets/icons/sharesolid_icon.png" class="card_icon">
                         </div>
                     </div>
                 </div>

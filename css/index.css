@@ -12,7 +12,7 @@ form input {
   border: none;
   border-bottom: 2px solid #cccccc;
   background-color: transparent;
-  width: 45%;
+  width: 49%;
 }
 
 form input::-webkit-outer-spin-button, form input::-webkit-inner-spin-button {
@@ -33,16 +33,25 @@ form button {
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
-  width: 13%;
   height: 40px;
   position: relative;
-  left: 19%;
   top: 10px;
   float: none;
 }
 
+.left_aligned {
+  margin-right: 80%;
+  width: 20%;
+}
+
 .right_aligned {
-  position: relative;
+  margin-left: 90%;
+  width: 20%;
+  margin-bottom: 1%;
+}
+
+.clear_button {
+  background-color: #cccccc;
 }
 
 .element_container {
@@ -51,7 +60,7 @@ form button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 1% 2% 1% 2%;
-  max-width: 70%;
+  width: 95%;
 }
 
 .element_title {
@@ -62,7 +71,7 @@ form button {
 table {
   border-collapse: collapse;
   background-color: white;
-  width: 83%;
+  width: 95%;
   vertical-align: middle;
 }
 
@@ -191,6 +200,7 @@ table td {
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  height: 382px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -205,6 +215,17 @@ table td {
   padding: 2px 16px;
 }
 
+.card_img {
+  max-height: 210px;
+  max-width: 100%;
+}
+
+.card_icon {
+  height: 12%;
+  width: 12%;
+  margin: 8%;
+}
+
 /* ------------------------------------------------------ */
 
 body {
@@ -216,7 +237,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 14%;
   position: relative;
   z-index: 1;
   top: 0;
@@ -224,6 +245,7 @@ body {
   background-color: #777777;
   overflow-x: hidden;
   padding-top: 20px;
+  float: left;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -255,6 +277,7 @@ body {
   font-size: 20px;
   /* Increased text to enable scrolling */
   padding: 0px 10px;
+  margin-left: 15%;
 }
 
 /* Add an active class to the active dropdown button */
