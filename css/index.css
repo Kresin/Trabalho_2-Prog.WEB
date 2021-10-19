@@ -43,7 +43,6 @@ form button {
 
 .right_aligned {
   position: relative;
-  
 }
 
 .element_container {
@@ -211,7 +210,6 @@ table td {
 
 header {
   background: #383838;
-  height: 130px;
   border-top: 10px solid #2C2C2C;
   border-bottom: 1px solid #2C2C2C;
 }
@@ -222,9 +220,7 @@ header {
   margin: 0px auto;
 }
 
-header #logo {
-  
-}
+header #logo {}
 
 #logo {
   max-width: 130px;
@@ -381,4 +377,69 @@ a svg {
       background: #555;
     }
   }
+}
+
+/* CSS da logo e do título que ficam no cabeçalho da página */
+
+.tittle {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  display: inline-block;
+  height: 80px;
+}
+
+.title_text {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+.logo {
+  height: 4%;
+  width: 4%;
+  float: left;
+}
+
+/* Estiliza o campo de busca do site */
+
+.search-icon {
+  height: 2%;
+  width: 2%;
+  float: left;
+  margin-top: 1%;
+}
+
+.search-container {
+  background-color: #fff;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 80%;
+  margin-left: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1%;
+}
+
+.search {
+  font-size: 20px;
+  padding-top: 20px;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding-left: 1%;
+  float: left;
+  width: 98%;
+}
+
+/* Rodapé da página */
+.footer {
+  background: #383838;
+  bottom: 0;
+  width: 100%;
+  height: 85px;
+  color: white;
+  text-align: center;
+  padding-top: 1.8%;
 }
