@@ -51,11 +51,10 @@ form button {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 1% 2% 1% 2%;
-  max-width: 83%;
-  position: relative;
+  max-width: 70%;
 }
 
-.title_text {
+.element_title {
   text-align: center;
   color: black;
 }
@@ -206,7 +205,94 @@ table td {
   padding: 2px 16px;
 }
 
-/* Codigo também copiado */
+/* ------------------------------------------------------ */
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+/* Fixed sidenav, full height */
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #777777;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+
+.main {
+  /* Same as the width of the sidenav */
+  font-size: 20px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+  display: none;
+  background-color: #d6d6d6;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* ------------------------------------------------------ */
+
+/* Header */
 
 header {
   background: #383838;
@@ -220,163 +306,8 @@ header {
   margin: 0px auto;
 }
 
-header #logo {}
-
 #logo {
   max-width: 130px;
-}
-
-/* Código copiado de https://code.tutsplus.com/tutorials/making-a-sliding-side-navigation-menu-for-responsive-designs--cms-28400 */
-
-/* The side navigation menu */
-
-.sidenav {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: #111;
-  /* Black*/
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-
-.sidenav a:hover, .offcanvas a:focus {
-  color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-  overflow: hidden;
-  width: 100%;
-}
-
-body {
-  overflow-x: hidden;
-  background-color: #eeeeee;
-  color: #808080;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-/* Add a black background color to the top navigation */
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-a svg {
-  transition: all .5s ease;
-  &:hover {
-    #transform: rotate(180deg);
-  }
-}
-
-#ico {
-  display: none;
-}
-
-.menu {
-  background: #000;
-  display: none;
-  padding: 5px;
-  width: 320px;
-  @include border-radius(5px);
-  #transition: all 0.5s ease;
-  a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px 2px;
-    margin: 3px 0;
-    text-decoration: none;
-    background: #444;
-    &:nth-child(1) {
-      margin-top: 0;
-      @include border-radius(3px 3px 0 0);
-    }
-    &:nth-child(5) {
-      margin-bottom: 0;
-      @include border-radius(0 0 3px 3px);
-    }
-    &:hover {
-      background: #555;
-    }
-  }
 }
 
 /* CSS da logo e do título que ficam no cabeçalho da página */
@@ -434,6 +365,7 @@ a svg {
 }
 
 /* Rodapé da página */
+
 .footer {
   background: #383838;
   bottom: 0;

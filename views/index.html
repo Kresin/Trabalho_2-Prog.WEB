@@ -3,8 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../scripts/index.js"></script>
-    <title>Teste de título</title>
+
+    <title>Free Market</title>
+
+</head>
+
+<body>
     <header>
         <div>
             <img class="logo" id="logo" src="../assets/icone-menu.png" />
@@ -17,30 +21,52 @@
             <input type="text" placeholder="Busque por um produto ou categoria" name="search" class="search">
         </div>
     </header>
-</head>
+        <div class="sidenav">
+            <button class="dropdown-btn">Cozinha
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Geladeira</a>
+                <a href="#">Fogão</a>
+            </div>
+            <button class="dropdown-btn">Livros
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Educacionais</a>
+                <a href="#">Infantis</a>
+            </div>
+            <button class="dropdown-btn">Eletrônicos
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Televisões</a>
+                <a href="#">Celulares</a>
+                <a href="#">Computadores</a>
+            </div>
+            <button class="dropdown-btn">Alimentos
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Cereais</a>
+                <a href="#">Bebidas</a>
+                <a href="#">Enlatados</a>
+            </div>
+            <button class="dropdown-btn">Veículos
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Carros</a>
+                <a href="#">Motos</a>
+            </div>
+        </div>
 
-<body>
-    <div id="sideNavigation" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Features</a>
-        <a href="#">Contact Us</a>
-    </div>
-
-    <nav class="topnav">
-        <a href="#" onclick="openNav()">
-            <svg width="30" height="30" id="icoOpen">
-                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-                <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-                <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-            </svg>
-        </a>
-    </nav>
-
-    <div id="main">
+    <script src="../scripts/index.js"></script>
+    <br>
+    <div class="main">
         <!-- Formulário de cadastro de produto -->
         <form class="element_container">
-            <p class="title_text"><strong>Anunciar produto</strong></p>
+            <p class="element_title"><strong>Anunciar produto</strong></p>
             <div>
                 <input type="text" placeholder="Nome do produto">
                 <input type="text" placeholder="Descrição do produto">
@@ -125,9 +151,9 @@
         <br>
         <!-- Cards com os produtos -->
         <div class="element_container">
-            <div class="title_text">
-                <text><strong>Os mais populares da semana </strong></text>
-                <a href=""> Ver mais</a>
+            <div class="element_title">
+                <text class="element_title"><strong>Os mais populares da semana</strong></text>
+                <a href=""><small style="vertical-align: top;"> Ver mais</small></a>
             </div>
             <div class="row">
                 <div class="column">
