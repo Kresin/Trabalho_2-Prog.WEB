@@ -4,7 +4,7 @@ function login() {
 
     if (user === "test" && password === "test") {
         let actualURL = window.location.href;
-        newURL = actualURL.replace("login.html?", "index.html");
+        newURL = actualURL.replace("login.html", "index.html");
         window.location.href = newURL;
     }
 

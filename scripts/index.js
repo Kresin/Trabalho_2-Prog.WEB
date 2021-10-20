@@ -15,18 +15,43 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 function create() {
-  var product = {
-    name: document.getElementById("product_name").value,
-    description: document.getElementById("product_description").value,
-    category: document.getElementById("product_category").value,
-    price: document.getElementById("product_price").value,
-    used: document.getElementById("product_state_used").checked,
-    almost_new: document.getElementById("product_state_almost_new").checked,
-    new: document.getElementById("product_state_new").checked
+  let name = document.getElementById("product_name").value;
+  if (name === "") {
+    alert("O campo nome é inválido!\nO nome do produto não pode ser vazio");
+    return;
   }
 
-  console.log("Produto a ser criado: ");
-  console.log(product);
+  let description = document.getElementById("product_description").value;
+  if (description === "") {
+    alert("O campo descrição é inválido!\nA descrição do produto não pode ser vazia");
+    return;
+  }
+
+  let category = document.getElementById("product_category").value;
+  if (category === "") {
+    alert("O campo categoria é inválido!\nA categoria do produto não pode ser vazia");
+    return;
+  }
+
+  let price = document.getElementById("product_price").value;
+  if (price === "") {
+    alert("O campo preço é inválido!\nO preço do produto não pode ser vazio");
+    return;
+  }
+  if (price <= 0) {
+    alert("O campo preço é inválido!\nO preço do produto deve ser maior que zero");
+    return;
+  }
+
+  let used = document.getElementById("product_state_used").checked;
+  let almost_new = document.getElementById("product_state_almost_new").checked;
+  let new_ = document.getElementById("product_state_new").checked;
+  if (used == false && almost_new == false && new_ == false) {
+    alert("É necessário selecionar o estado do produto!");
+    return;
+  }
+
+  alert("Parabéns!\nSeu produto foi anunciado com sucesso!");
 
   document.getElementById("product_name").value = "";
   document.getElementById("product_description").value = "";
