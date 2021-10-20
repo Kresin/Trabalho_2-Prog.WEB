@@ -231,6 +231,7 @@ table td {
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
+  background-color: #EEEEEE;
 }
 
 /* Fixed sidenav, full height */
@@ -242,10 +243,11 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #777777;
+  background-color: #EEEEEE;
   overflow-x: hidden;
   padding-top: 20px;
   float: left;
+  border-right:2px solid rgb(185, 185, 185);
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -262,39 +264,46 @@ body {
   text-align: left;
   cursor: pointer;
   outline: none;
+  color: #009688;
+  border-bottom: 2px solid rgb(185, 185, 185);
 }
 
 /* On mouse-over */
 
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #d4d4d4;
 }
 
 /* Main content */
-
 .main {
   /* Same as the width of the sidenav */
   font-size: 20px;
   /* Increased text to enable scrolling */
   padding: 0px 10px;
-  margin-left: 15%;
+  margin-left: 15%;				   
 }
 
 /* Add an active class to the active dropdown button */
 
 .active {
-  background-color: green;
-  color: white;
+  font-weight: bold;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 
 .dropdown-container {
   display: none;
-  background-color: #d6d6d6;
+  background-color: #EEEEEE;
   padding-left: 8px;
 }
 
+.dropdown-subitem {
+  font-size: 16px !important;
+  right: 30% !important;
+  color: black !important;
+  border-bottom: 0px solid grey !important;
+}
 /* Optional: Style the caret down icon */
 
 .fa-caret-down {
