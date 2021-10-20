@@ -1,5 +1,6 @@
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
+var subitem = document.getElementsByClassName("dropdown-subitem");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -11,6 +12,26 @@ for (i = 0; i < dropdown.length; i++) {
     } else {
       dropdownContent.style.display = "block";
     }
+  });
+}
+
+for (i = 0; i < subitem.length; i++) {
+  subitem[i].addEventListener("click", function () {
+    //Remove o negrito de todos os subitens e depois adiciona no subitem pressionado
+    for (j = 0; j < subitem.length; j++) {
+      if (subitem[j].classList.contains("active")) {
+        subitem[j].classList.toggle("active");
+      }
+    }
+    this.classList.toggle("active");
+
+    //Ajusta o texto dos itens mais visitados
+    var mostVisited = document.getElementById("most-visited").textContent;
+    if (mostVisited.includes("(")) {
+      mostVisited = mostVisited.substring(0, mostVisited.indexOf("(") - 1);
+    }
+    mostVisited += " (" + this.textContent + ")";
+    document.getElementById("most-visited").innerHTML = mostVisited;
   });
 }
 
