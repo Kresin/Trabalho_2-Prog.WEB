@@ -92,6 +92,16 @@ table td {
   color: #000;
 }
 
+.table_filter_container {
+  padding-right: 17%;
+}
+
+.table_filter_icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
 .clean {
   background-color: #cccccc;
 }
